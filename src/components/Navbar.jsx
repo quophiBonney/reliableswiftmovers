@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`w-full z-50 flex justify-center transition-all duration-300 overflow-x-hidden ${scrolled ? "border-b-4 border-b-red-600 fixed top-0" : "relative"}`}
+      className={`w-full z-50 flex justify-center transition-all duration-300 overflow-x-hidden ${scrolled ? "border-b-2 border-b-black/10 fixed top-0" : "relative"}`}
     >
       <nav
         className={`w-full transition-all duration-500
@@ -62,10 +62,9 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="w-1/3 h-full bg-red-600 -skew-x-10 flex justify-center items-center">
-            <button className="relative px-6 py-2 rounded-full bg-red-600 text-white text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
-              Get Quote
-            </button>
+          <div className="w-1/3 h-full bg-red-600 -skew-x-10 flex flex-col text-white justify-center items-center">
+            <p>Call Us On</p>
+            <p className="text-3xl font-extrabold">1-587-500-0309</p>
           </div>
         </div>
 

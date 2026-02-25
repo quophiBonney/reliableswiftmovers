@@ -40,7 +40,7 @@ const ContactForm = () => {
           </button>
         </form>
       </div>
-      <div className="">
+      <div className="w-full overflow-x-hidden">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.5938567057044!2d-113.94547102340071!3d51.15990877173639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537161801da2c54d%3A0x5b68f62d3e9a32e1!2s282%20Cornerstone%20Cres%20NE%2C%20Calgary%2C%20AB%20T3N%201R4%2C%20Canada!5e1!3m2!1sen!2sgh!4v1772036893587!5m2!1sen!2sgh"
           width="600"
