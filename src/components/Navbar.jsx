@@ -72,13 +72,17 @@ export default function Navbar() {
         {/* Mobile Layout */}
         <div className="bg-red-500 flex items-center justify-between px-8 h-20 md:hidden">
           {/* Logo */}
-          <h1 className="text-xl font-bold tracking-wide">
-            Move<span className="text-blue-600">Pro</span>
+          <h1 className="text-xl font-bold tracking-wide text-white">
+            Reliable Swift <span className="text-blue-600">Movers</span>
           </h1>
 
           {/* Mobile Icon */}
           <button onClick={() => setOpen(!open)}>
-            {open ? <X size={26} /> : <Menu size={26} />}
+            {open ? (
+              <X size={26} color={"white"} />
+            ) : (
+              <Menu size={26} color={"white"} />
+            )}
           </button>
         </div>
       </nav>

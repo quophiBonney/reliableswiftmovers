@@ -34,12 +34,10 @@ const TestimonialSlider = () => {
     <div className="px-5 md:px-10 mt-16">
       {/* Heading */}
       <div className="text-center mb-10">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 text-black">
-          Explore Beautiful Places
+        <p className="text-blue-600 text-xl font-semibold mb-3">Testimonials</p>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal italic mb-3 text-black">
+          Happy <span className="font-extrabold">Clients</span>
         </h2>
-        <p className="text-gray-600">
-          Discover some of the most beautiful places around the world.
-        </p>
       </div>
 
       <Swiper

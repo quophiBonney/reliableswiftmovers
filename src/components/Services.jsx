@@ -1,5 +1,7 @@
 import React from "react";
 import van from "../assets/hero.png";
+import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <section className="bg-blue-600 grid grid-cols-1 md:grid-cols-2 gap-16 p-10 mt-16">
@@ -10,9 +12,12 @@ const Services = () => {
             We provide expert residential moving services to ensure a smooth and
             stress-free move for you and your family.
           </p>
-          <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-            Learn More
-          </button>
+          <Link
+            to="/services"
+            className="font-bold px-4 py-2 text-red-600  rounded hover:text-red-700 transition"
+          >
+            Learn More <ChevronRight className="inline-block ml-2" />
+          </Link>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center">
           <h3 className="text-xl font-semibold mb-4">Commercial Moving</h3>
@@ -20,9 +25,12 @@ const Services = () => {
             Our commercial moving services are designed to minimize downtime and
             ensure a seamless transition for your business.
           </p>
-          <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-            Learn More
-          </button>
+          <Link
+            to="/services"
+            className="font-bold px-4 py-2 text-red-600 rounded hover:text-red-700 transition"
+          >
+            Learn More <ChevronRight className="inline-block ml-2" />
+          </Link>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center">
           <h3 className="text-xl font-semibold mb-4">Long-Distance Moving</h3>
@@ -30,9 +38,12 @@ const Services = () => {
             We offer reliable long-distance moving services across Canada,
             ensuring your belongings arrive safely and on time.
           </p>
-          <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-            Learn More
-          </button>
+          <Link
+            to="/services"
+            className="font-bold px-4 py-2 text-red-600  rounded hover:text-red-700 transition"
+          >
+            Learn More <ChevronRight className="inline-block ml-2" />
+          </Link>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center">
           <h3 className="text-xl font-semibold mb-4">Long-Distance Moving</h3>
@@ -40,9 +51,12 @@ const Services = () => {
             We offer reliable long-distance moving services across Canada,
             ensuring your belongings arrive safely and on time.
           </p>
-          <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-            Learn More
-          </button>
+          <Link
+            to="/services"
+            className="font-bold px-4 py-2 text-red-600  rounded hover:text-red-700 transition"
+          >
+            Learn More <ChevronRight className="inline-block ml-2" />
+          </Link>
         </div>
       </div>
       <div>
