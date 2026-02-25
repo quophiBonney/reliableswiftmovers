@@ -18,90 +18,120 @@ export default function Navbar() {
   const links = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
-    { name: "Pricing", path: "/pricing" },
-    { name: "About", path: "/about" },
+    { name: "About Us", path: "/about" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
-    <header className="fixed w-full z-50 flex justify-center mt-4 px-4">
+    <header
+      className={`w-full z-50 flex justify-center transition-all duration-300 overflow-x-hidden ${scrolled ? "border-b-4 border-b-red-600 fixed top-0" : "relative"}`}
+    >
       <nav
-        className={`w-full max-w-7xl rounded-2xl transition-all duration-500
+        className={`w-full transition-all duration-500
         ${
           scrolled
-            ? "bg-white/70 backdrop-blur-xl shadow-xl border border-white/20"
-            : "bg-white/40 backdrop-blur-md"
+            ? "bg-white backdrop-blur-xl shadow-xl"
+            : "bg-white backdrop-blur-md"
         }`}
       >
-        <div className="flex items-center justify-between px-8 h-16">
-
-          {/* Logo */}
-          <h1 className="text-xl font-semibold tracking-wide">
-            Move<span className="text-blue-600">Pro</span>
-          </h1>
-
-          {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-10">
-            {links.map((link) => (
-              <NavLink
-                key={link.name}
-                to={link.path}
-                className={({ isActive }) =>
-                  `relative text-sm font-medium transition duration-300
-                  ${
-                    isActive
-                      ? "text-blue-600"
-                      : "text-gray-700 hover:text-blue-600"
-                  }`
-                }
-              >
-                {link.name}
-
-                {/* Animated underline */}
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-              </NavLink>
-            ))}
+        {/* Large Device Layout - 50% Logo/Menus + 50% CTA */}
+        <div className="hidden md:flex items-center justify-between h-20">
+          {/* Logo and Links - 50% width */}
+          <div className="flex items-center gap-28 w-full px-8 md:px-14">
+            <h1 className="text-2xl font-extrabold tracking-wide uppercase">
+              Reliable Swift <span className="text-red-600">Movers</span>
+            </h1>
+            <div className="flex items-center gap-10">
+              {links.map((link) => (
+                <NavLink
+                  key={link.name}
+                  to={link.path}
+                  className={({ isActive }) =>
+                    `relative text-lg font-bold uppercase transition duration-300
+                    ${
+                      isActive
+                        ? "text-blue-600"
+                        : "text-gray-700 hover:text-blue-600"
+                    }`
+                  }
+                >
+                  {link.name}
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </NavLink>
+              ))}
+            </div>
           </div>
 
-          {/* CTA */}
-          <div className="hidden md:block">
-            <button className="relative px-6 py-2 rounded-full bg-blue-600 text-white text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          {/* CTA - 50% width with red bg and slanted line */}
+          <div className="w-1/3 h-full bg-red-600 -skew-x-10 flex justify-center items-center">
+            <button className="relative px-6 py-2 rounded-full bg-red-600 text-white text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Get Quote
             </button>
           </div>
+        </div>
+
+        {/* Mobile Layout */}
+        <div className="flex items-center justify-between px-8 h-20 md:hidden">
+          {/* Logo */}
+          <h1 className="text-xl font-bold tracking-wide">
+            Move<span className="text-blue-600">Pro</span>
+          </h1>
 
           {/* Mobile Icon */}
-          <button
-            className="md:hidden"
-            onClick={() => setOpen(!open)}
-          >
+          <button onClick={() => setOpen(!open)}>
             {open ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
+      </nav>
 
-        {/* Mobile Drawer */}
-        <div
-          className={`md:hidden transition-all duration-500 overflow-hidden ${
-            open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
-        >
-          <div className="px-8 pb-6 space-y-4">
+      {/* Mobile Drawer - Slide-in from right, full height */}
+      <div
+        className={`md:hidden fixed right-0 top-0 h-full w-3/5 max-w-80 bg-blue-50 shadow-2xl transform transition-transform duration-300 ease-in-out z-50 ${
+          open ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex flex-col h-full">
+          {/* Drawer Header with Close Button */}
+          <div className="flex items-center justify-between px-6 py-5 border-b border-blue-100">
+            <h2 className="text-xl font-bold text-blue-600">MovePro</h2>
+            <button
+              onClick={() => setOpen(false)}
+              className="p-2 hover:bg-blue-100 rounded-full transition-colors"
+            >
+              <X size={24} className="text-gray-600" />
+            </button>
+          </div>
+
+          {/* Drawer Links */}
+          <div className="flex flex-col px-6 py-6 space-y-2">
             {links.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
                 onClick={() => setOpen(false)}
-                className="block text-gray-700 font-medium hover:text-blue-600"
+                className="block px-4 py-3 text-lg font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-100 rounded-lg transition-colors"
               >
                 {link.name}
               </NavLink>
             ))}
+          </div>
 
-            <button className="w-full bg-blue-600 text-white py-2 rounded-full mt-4">
+          {/* Drawer CTA */}
+          <div className="mt-auto px-6 pb-8">
+            <button className="w-full bg-blue-600 text-white py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors shadow-lg">
               Get Quote
             </button>
           </div>
         </div>
-      </nav>
+      </div>
+
+      {/* Overlay backdrop when drawer is open */}
+      {open && (
+        <div
+          className="md:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+          onClick={() => setOpen(false)}
+        />
+      )}
     </header>
   );
 }
