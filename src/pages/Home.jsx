@@ -12,8 +12,8 @@ const Home = () => {
         <Moving />
       </div>
       <Services />
-      <TollFree />
       <TestimonialSlider />
+      <TollFree />
     </>
   );
 };
