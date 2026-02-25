@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -37,10 +37,13 @@ export default function Navbar() {
         {/* Large Device Layout - 50% Logo/Menus + 50% CTA */}
         <div className="hidden md:flex items-center justify-between h-20">
           {/* Logo and Links - 50% width */}
-          <div className="flex items-center gap-28 w-full px-8 md:px-14">
-            <h1 className="text-2xl font-extrabold tracking-wide uppercase">
+          <div className="flex items-center gap-28 w-full px-8 md:px-10">
+            <NavLink
+              to="/"
+              className="text-2xl font-extrabold tracking-wide uppercase"
+            >
               Reliable Swift <span className="text-red-600">Movers</span>
-            </h1>
+            </NavLink>
             <div className="flex items-center gap-10">
               {links.map((link) => (
                 <NavLink
@@ -94,7 +97,9 @@ export default function Navbar() {
         <div className="flex flex-col h-full">
           {/* Drawer Header with Close Button */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-blue-100">
-            <h2 className="text-xl font-bold text-blue-600">MovePro</h2>
+            <h2 className="text-xl font-bold text-blue-600">
+              Reliable Swift Movers
+            </h2>
             <button
               onClick={() => setOpen(false)}
               className="p-2 hover:bg-blue-100 rounded-full transition-colors"
@@ -115,13 +120,6 @@ export default function Navbar() {
                 {link.name}
               </NavLink>
             ))}
-          </div>
-
-          {/* Drawer CTA */}
-          <div className="mt-auto px-6 pb-8">
-            <button className="w-full bg-blue-600 text-white py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors shadow-lg">
-              Get Quote
-            </button>
           </div>
         </div>
       </div>
