@@ -31,13 +31,13 @@ export default function Navbar() {
         ${
           scrolled
             ? "bg-white backdrop-blur-xl shadow-xl"
-            : "bg-white backdrop-blur-md"
+            : "bg-black/10 backdrop-blur-md shadow-xl"
         }`}
       >
         {/* Large Device Layout - 50% Logo/Menus + 50% CTA */}
         <div className="hidden md:flex items-center justify-between h-20">
           {/* Logo and Links - 50% width */}
-          <div className="flex items-center gap-28 w-full px-8 md:px-10">
+          <div className="flex items-center gap-28 w-full px-8 md:px-10 lg:px-16">
             <NavLink
               to="/"
               className="text-2xl font-extrabold tracking-wide uppercase"
