@@ -79,7 +79,10 @@ export default function Navbar() {
           </h1>
 
           {/* Mobile Icon */}
-          <button onClick={() => setOpen(!open)}>
+          <button
+            onClick={() => setOpen(!open)}
+            className="hover:cursor-pointer"
+          >
             {open ? (
               <X size={26} color={"white"} />
             ) : (
