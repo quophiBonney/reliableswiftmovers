@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import staff from "../assets/hero.png";
 const Moving = () => {
   return (
@@ -28,6 +28,12 @@ const Moving = () => {
           move your belongings, ensuring everything is properly protected, and
           loaded strategically and efficiently, for a seamless move.
         </p>
+        <Link
+          to="/services"
+          className="inline-block px-6 py-3 rounded bg-red-600 text-white font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
+        >
+          Get Your Free Quote
+        </Link>
       </div>
       <div>
         <img src={staff} alt="Man working in moving service van" />

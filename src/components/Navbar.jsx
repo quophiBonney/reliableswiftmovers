@@ -62,7 +62,6 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* CTA - 50% width with red bg and slanted line */}
           <div className="w-1/3 h-full bg-red-600 -skew-x-10 flex justify-center items-center">
             <button className="relative px-6 py-2 rounded-full bg-red-600 text-white text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Get Quote
@@ -71,7 +70,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Layout */}
-        <div className="flex items-center justify-between px-8 h-20 md:hidden">
+        <div className="bg-red-500 flex items-center justify-between px-8 h-20 md:hidden">
           {/* Logo */}
           <h1 className="text-xl font-bold tracking-wide">
             Move<span className="text-blue-600">Pro</span>
@@ -84,7 +83,6 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Drawer - Slide-in from right, full height */}
       <div
         className={`md:hidden fixed right-0 top-0 h-full w-3/5 max-w-80 bg-blue-50 shadow-2xl transform transition-transform duration-300 ease-in-out z-50 ${
           open ? "translate-x-0" : "translate-x-full"

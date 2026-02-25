@@ -1,19 +1,21 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import HomeHero from "./components/HomeHero";
 import Home from "./pages/Home";
-
+import AOS from "aos";
 function App() {
-  const [count, setCount] = useState(0);
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
 
   return (
     <>
       <Navbar />
-
-      <div className="px-4 md:px-10">
-        <Home />
-      </div>
+      <Home />
     </>
   );
 }
