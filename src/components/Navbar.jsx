@@ -80,7 +80,7 @@ export default function Navbar() {
 
         {/* ================= MOBILE ================= */}
         <div className="bg-red-600 flex items-center justify-between px-8 h-20 md:hidden">
-          <h1 className="text-xl font-bold tracking-wide text-white">
+          <h1 className="text-2xl font-bold tracking-wide text-white">
             RS<span className="text-blue-600">M</span>
           </h1>
 
