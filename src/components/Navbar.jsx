@@ -85,7 +85,7 @@ export default function Navbar() {
             <img
               src={logo}
               alt="Reliable Swift Movers logo"
-              className="w-40 mt-5 object-cover"
+              className="w-28 mt-5 object-cover"
             />
           </NavLink>
 
