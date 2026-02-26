@@ -80,12 +80,12 @@ export default function Navbar() {
         </div>
 
         {/* ================= MOBILE ================= */}
-        <div className="bg-white flex items-center justify-between px-8 h-20 md:hidden">
+        <div className="bg-white flex items-center justify-between px-4 h-20 md:hidden">
           <NavLink to="/">
             <img
               src={logo}
               alt="Reliable Swift Movers logo"
-              className="w-28 mt-5 object-cover"
+              className="w-32 mt-5 object-cover"
             />
           </NavLink>
 
