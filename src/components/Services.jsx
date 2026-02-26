@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 const Services = () => {
   return (
-    <section className="bg-blue-600 grid grid-cols-1 md:grid-cols-2 gap-16 p-10 mt-16">
+    <section className="bg-blue-600 grid grid-cols-1 md:grid-cols-2 gap-16 p-6 lg:p-10 mt-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-white rounded-lg shadow-lg p-6 text-center">
           <h3 className="text-xl font-semibold mb-4">Residential Moving</h3>

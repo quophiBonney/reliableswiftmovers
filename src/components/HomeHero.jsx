@@ -2,9 +2,9 @@ import React from "react";
 import van from "../assets/swift_movers_van.png";
 const HomeHero = () => {
   return (
-    <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <section className="mt-10 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div>
-        <h1 className="text-3xl md:text-4xl font-bold text-shadow-lg mb-6 text-blue-700">
+        <h1 className="text-3xl md:text-4xl font-bold lg:text-shadow-lg mb-6 text-blue-700">
           Save Up To 60% On Your Move With Reliable Swift Movers
         </h1>
         <div class="bg-blue-600 rounded-lg p-4 md:p-6 lg:p-10">

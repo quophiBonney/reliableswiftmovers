@@ -81,7 +81,7 @@ export default function Navbar() {
         {/* ================= MOBILE ================= */}
         <div className="bg-red-600 flex items-center justify-between px-8 h-20 md:hidden">
           <h1 className="text-xl font-bold tracking-wide text-white">
-            Reliable Swift <span className="text-blue-600">Movers</span>
+            RS<span className="text-blue-600">M</span>
           </h1>
 
           <button onClick={() => setOpen(!open)}>
@@ -100,15 +100,13 @@ export default function Navbar() {
 
       {/* ================= MOBILE DRAWER ================= */}
       <div
-        className={`md:hidden fixed right-0 top-0 h-full w-3/5 max-w-80 bg-blue-50 shadow-2xl transform transition-transform duration-300 z-50 ${
+        className={`md:hidden fixed right-0 top-0 h-full w-3/5 max-w-80 bg-white shadow-2xl transform transition-transform duration-300 z-50 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between px-6 py-5 border-b border-blue-100">
-            <h2 className="text-xl font-bold text-blue-600">
-              Reliable Swift Movers
-            </h2>
+            <h2 className="text-xl font-bold text-blue-600">RSM</h2>
 
             <button
               onClick={() => setOpen(false)}
