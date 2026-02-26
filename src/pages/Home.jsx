@@ -1,7 +1,7 @@
 import HomeHero from "../components/HomeHero";
 import Moving from "../components/Moving";
 import Services from "../components/Services";
-import TestimonialSlider from "../components/TestimianlSlider";
+import TestimonialSlider from "../components/TestimonialSlider";
 import TollFree from "../components/TollFree";
 
 const Home = () => {
