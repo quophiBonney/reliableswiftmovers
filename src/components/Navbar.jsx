@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
-
+import logo from "../assets/logo.png";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -36,11 +36,12 @@ export default function Navbar() {
         <div className="hidden md:flex items-center h-20 relative overflow-hidden">
           {/* LEFT SIDE */}
           <div className="flex items-center gap-24 w-full px-8 md:px-10 lg:px-24 z-10">
-            <NavLink
-              to="/"
-              className="text-2xl font-extrabold tracking-wide uppercase"
-            >
-              Reliable Swift <span className="text-red-600">Movers</span>
+            <NavLink to="/">
+              <img
+                src={logo}
+                alt="Reliable Swift Movers logo"
+                className="w-56 mt-5 object-cover"
+              />
             </NavLink>
 
             <div className="flex items-center gap-10">
@@ -79,19 +80,23 @@ export default function Navbar() {
         </div>
 
         {/* ================= MOBILE ================= */}
-        <div className="bg-red-600 flex items-center justify-between px-8 h-20 md:hidden">
-          <h1 className="text-2xl font-bold tracking-wide text-white">
-            RS<span className="text-blue-600">M</span>
-          </h1>
+        <div className="bg-white flex items-center justify-between px-8 h-20 md:hidden">
+          <NavLink to="/">
+            <img
+              src={logo}
+              alt="Reliable Swift Movers logo"
+              className="w-40 mt-5 object-cover"
+            />
+          </NavLink>
 
           <button onClick={() => setOpen(!open)}>
             {open ? (
-              <div className="hover:cursor-pointer bg-white p-2 rounded">
-                <X size={26} color={"red"} />
+              <div className="hover:cursor-pointer bg-red-500 p-2 rounded">
+                <X size={25} color={"white"} />
               </div>
             ) : (
-              <div className="hover:cursor-pointer bg-white p-2 rounded">
-                <Menu size={26} color={"red"} />
+              <div className="hover:cursor-pointer bg-red-500 p-2 rounded">
+                <Menu size={25} color={"white"} />
               </div>
             )}
           </button>
