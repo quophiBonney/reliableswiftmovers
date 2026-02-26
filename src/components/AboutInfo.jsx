@@ -28,7 +28,7 @@ const AboutInfo = () => {
           hassle-free moves tailored to your needs. We handle the details so you
           can move forward confidently
         </p>
-        <div className="flex gap-10 mt-10">
+        <div className="flex flex-col lg:flex-row gap-10 mt-10">
           <div className="flex flex-col">
             <div className="flex gap-3 items-center">
               <div className="bg-red-500 p-3 rounded">
