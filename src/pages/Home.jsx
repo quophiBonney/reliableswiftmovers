@@ -7,7 +7,7 @@ import TollFree from "../components/TollFree";
 const Home = () => {
   return (
     <>
-      <div className="px-4 md:px-10 lg:px-16">
+      <div className="px-4 md:px-10 lg:px-24">
         <HomeHero />
         <Moving />
       </div>

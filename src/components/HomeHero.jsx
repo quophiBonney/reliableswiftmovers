@@ -7,7 +7,7 @@ const HomeHero = () => {
         <h1 className="text-3xl md:text-4xl font-bold text-shadow-lg mb-6 text-blue-700">
           Save Up To 60% On Your Move With Reliable Swift Movers
         </h1>
-        <div class="bg-blue-600 rounded-lg p-4">
+        <div class="bg-blue-600 rounded-lg p-4 md:p-6 lg:p-10">
           <form>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div>
