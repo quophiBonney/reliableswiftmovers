@@ -1,7 +1,7 @@
 const TollFree = () => {
   return (
     <section className="mt-16 lg:mt-20 flex flex-col justify-center items-center space-y-3 bg-red-500 text-white p-10 md:p-16">
-      <p className="mt-10 text-2xl md:text-3xl  font-normal italic">
+      <p className="mt-10 text-xl md:text-2xl lg:text-3xl font-normal italic">
         If you are looking for{" "}
         <span className="font-extrabold">moving service</span> that meets your
         budget
