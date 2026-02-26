@@ -7,35 +7,36 @@ const ContactForm = () => {
         <h4 className="text-2xl md:text-3xl font-bold text-blue-700 mb-5">
           Get In Touch With Us
         </h4>
-        <form className="space-y-5">
+        <form className="space-y-6 lg:space-y-8">
           <div>
             <input
               type="text"
               placeholder="Enter your name"
-              className="w-full p-3 md:p-4 rounded-md bg-white"
+              className="w-full p-3 md:p-4 lg:p-5 rounded-md bg-black/10"
             />
           </div>
           <div>
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full p-3 md:p-4 rounded-md bg-white"
+              className="w-full p-3 md:p-4 lg:p-5 rounded-md bg-black/10"
             />
           </div>
           <div>
             <input
               type="tel"
               placeholder="Enter your phone number"
-              className="w-full p-3 md:p-4 rounded-md bg-white"
+              className="w-full p-3 md:p-4 lg:p-5 rounded-md bg-black/10"
             />
           </div>
           <div>
             <textarea
-              className="w-full p-3 md:p-4 rounded-md bg-white"
+              className="w-full p-3 md:p-4 rounded-md bg-black/10"
+              rows={7}
               placeholder="Enter your message"
             ></textarea>
           </div>
-          <button className="mt-6 w-full bg-red-600 text-white py-3 rounded font-bold text-lg hover:bg-red-700 transition-colors cursor-pointer">
+          <button className=" w-full bg-red-600 text-white py-3 rounded font-bold text-lg hover:bg-red-700 transition-colors cursor-pointer">
             Send Message
           </button>
         </form>
