@@ -7,12 +7,12 @@ const TollFree = () => {
         budget
       </p>
       <div className="flex items-center space-x-4 bg-blue-600 rounded-full p-5 lg:px-5">
-        <span className="text-xl md:text-2xl lg:text-4xl font-bold">
+        <span className="text-base md:text-xl lg:text-4xl font-bold">
           Call Us Toll-Free:
         </span>
         <a
           href="tel:1-800-123-4567"
-          className="text-xl md:text-2xl lg:text-4xl font-bold text-blue-200 hover:text-blue-400 transition-colors"
+          className="text-base md:text-xl lg:text-4xl font-bold text-blue-200 hover:text-blue-400 transition-colors"
         >
           1-800-123-4567
         </a>
