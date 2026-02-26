@@ -128,7 +128,7 @@ const TestimonialSlider = () => {
               </div>
 
               {/* Testimonial Message */}
-              <p className="text-gray-600 text-center leading-relaxed flex-grow">
+              <p className="text-gray-800 text-center leading-relaxed flex-grow">
                 "{testimonial.message}"
               </p>
 

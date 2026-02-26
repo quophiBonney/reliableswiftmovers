@@ -1,5 +1,3 @@
-import React from "react";
-
 const TollFree = () => {
   return (
     <section className="mt-16 lg:mt-20 flex flex-col justify-center items-center space-y-3 bg-red-500 text-white p-10 md:p-16">

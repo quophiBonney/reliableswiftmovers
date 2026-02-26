@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import staff from "../assets/hero.png";
 const Moving = () => {
   return (
-    <section className="mt-16 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <section className="mt-16 lg:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div className="space-y-4 lg:space-y-5">
         <p className="font-light text-xl leading-relaxed">
           If you are relocating or moving anywhere in <strong>Canada</strong>,

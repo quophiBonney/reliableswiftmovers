@@ -34,7 +34,6 @@ export default function Navbar() {
       >
         {/* ================= DESKTOP ================= */}
         <div className="hidden md:flex items-center h-20 relative overflow-hidden">
-          
           {/* LEFT SIDE */}
           <div className="flex items-center gap-24 w-full px-8 md:px-10 lg:px-24 z-10">
             <NavLink
@@ -68,18 +67,13 @@ export default function Navbar() {
 
           {/* ================= SKEW CTA AREA ================= */}
           <div className="absolute right-0 h-full w-[420px] flex items-center justify-center text-white">
-
             {/* Skewed Background ONLY */}
             <div className="absolute inset-0 bg-red-600 transform -skew-x-12 origin-left w-[150%]"></div>
 
             {/* Content (NOT skewed) */}
             <div className="relative text-center">
-              <p className="text-sm uppercase tracking-wider">
-                Call Us On
-              </p>
-              <p className="text-3xl font-extrabold">
-                1-587-500-0309
-              </p>
+              <p className="text-sm uppercase tracking-wider">Call Us On</p>
+              <p className="text-3xl font-extrabold">1-587-500-0309</p>
             </div>
           </div>
         </div>
@@ -92,9 +86,13 @@ export default function Navbar() {
 
           <button onClick={() => setOpen(!open)}>
             {open ? (
-              <X size={26} color="white" />
+              <div className="hover:cursor-pointer bg-white p-2 rounded">
+                <X size={26} color={"red"} />
+              </div>
             ) : (
-              <Menu size={26} color="white" />
+              <div className="hover:cursor-pointer bg-white p-2 rounded">
+                <Menu size={26} color={"red"} />
+              </div>
             )}
           </button>
         </div>
