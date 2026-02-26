@@ -6,7 +6,7 @@ const TollFree = () => {
         <span className="font-extrabold">moving service</span> that meets your
         budget
       </p>
-      <div className="flex items-center space-x-4 bg-blue-600 rounded-full p-5 lg:px-5">
+      <div className="flex flex-col lg:flex-row items-center space-x-4 bg-blue-600 rounded-full p-5 lg:px-5">
         <span className="text-base md:text-xl lg:text-4xl font-bold">
           Call Us Toll-Free:
         </span>
