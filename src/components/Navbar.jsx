@@ -52,15 +52,15 @@ export default function Navbar() {
                   className={({ isActive }) =>
                     `relative text-lg font-bold uppercase transition duration-300 group ${
                       isActive
-                        ? "text-blue-600"
-                        : "text-gray-700 hover:text-blue-600"
+                        ? "text-red-600"
+                        : "text-gray-700 hover:text-red-600"
                     }`
                   }
                 >
                   {link.name}
 
                   {/* animated underline */}
-                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
                 </NavLink>
               ))}
             </div>
@@ -111,7 +111,7 @@ export default function Navbar() {
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between px-6 py-5 border-b border-blue-100">
-            <h2 className="text-xl font-bold text-blue-600">RSM</h2>
+            <h2 className="text-xl font-bold text-red-600">RSM</h2>
 
             <button
               onClick={() => setOpen(false)}

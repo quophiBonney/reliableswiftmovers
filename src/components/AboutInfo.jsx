@@ -14,7 +14,7 @@ const AboutInfo = () => {
         />
       </div>
       <div className="space-y-4">
-        <p className="text-red-500 text-base uppercase lg:mt-16 font-bold">
+        <p className="text-red-600 text-base uppercase lg:mt-16 font-bold">
           About -
         </p>
         <h4 className="text-3xl font-bold">
@@ -31,22 +31,22 @@ const AboutInfo = () => {
         <div className="flex flex-col lg:flex-row gap-10 mt-10">
           <div className="flex flex-col">
             <div className="flex gap-3 items-center">
-              <div className="bg-red-500 p-3 rounded">
+              <div className="bg-red-600 p-3 rounded">
                 <ChartNoAxesCombined color={"white"} size={50} />
               </div>
               <div className="flex flex-col">
-                <p className="text-red-500 text-3xl font-bold">3000+</p>
+                <p className="text-red-600 text-3xl font-bold">3000+</p>
                 <p className="m-auto">Projects Done</p>
               </div>
             </div>
           </div>
           <div>
             <div className="flex gap-3 items-center">
-              <div className="bg-red-500 p-3 rounded">
+              <div className="bg-red-600 p-3 rounded">
                 <Van color={"white"} size={50} />
               </div>
               <div className="flex flex-col">
-                <p className="text-red-500 text-3xl font-bold">2000+</p>
+                <p className="text-red-600 text-3xl font-bold">2000+</p>
                 <p className="text-center">Satisfied Clients</p>
               </div>
             </div>

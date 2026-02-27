@@ -1,6 +1,7 @@
 import React from "react";
 import AboutInfo from "../components/AboutInfo";
 import Steps from "../components/Steps";
+import GetQuote from "../components/GetQuote";
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
         <AboutInfo />
         <Steps />
       </div>
+      <GetQuote />
     </>
   );
 };

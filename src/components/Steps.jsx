@@ -8,7 +8,7 @@ const Steps = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="flex flex-col items-center space-y-4">
-          <div className="bg-red-500 text-white rounded-full w-16 h-16 p-4 font-bold text-4xl flex items-center justify-center">
+          <div className="bg-red-600 text-white rounded-full w-16 h-16 p-4 font-bold text-4xl flex items-center justify-center">
             1
           </div>
           <h3 className="text-xl font-bold">Get a Quote</h3>
@@ -18,7 +18,7 @@ const Steps = () => {
           </p>
         </div>
         <div className="flex flex-col items-center space-y-4">
-          <div className="bg-red-500 text-white rounded-full w-16 h-16 p-4 font-bold text-4xl flex items-center justify-center">
+          <div className="bg-red-600 text-white rounded-full w-16 h-16 p-4 font-bold text-4xl flex items-center justify-center">
             2
           </div>
           <h3 className="text-xl font-bold">Schedule Your Move</h3>
@@ -28,7 +28,7 @@ const Steps = () => {
           </p>
         </div>
         <div className="flex flex-col items-center space-y-4">
-          <div className="bg-red-500 text-white rounded-full w-16 h-16 p-4 font-bold text-4xl flex items-center justify-center">
+          <div className="bg-red-600 text-white rounded-full w-16 h-16 p-4 font-bold text-4xl flex items-center justify-center">
             3
           </div>
           <h3 className="text-xl font-bold">Move with Confidence</h3>
